@@ -1266,7 +1266,7 @@
   </head>
 
   <body class="not-loaded">
-    <h1 class="title">Dur hai toh kya hua...</h1>
+    <h1 class="title">Dur hu toh kya hua...</h1>
     <button class="reloadBtn" onclick="bloomFlower()">yeh toh de hi sakta hu</button>
     <div class="night"></div>
     <div class="flowers">
@@ -1584,7 +1584,7 @@
       function bloomFlower() {
           if (document.body.classList.contains('not-loaded')) {
               document.body.classList.remove("not-loaded");
-              document.querySelector('.reloadBtn').textContent = 'Reload Page';
+              document.querySelector('.reloadBtn').textContent = 'Bloom it again!';
           } else {
             location.reload();
           }
