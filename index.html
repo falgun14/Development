@@ -1262,13 +1262,51 @@
       .not-loaded * {
         animation-play-state: paused !important;
       }
+
+      
+    .textUp {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    }
+
+.cssanimation {
+    font-size: 2em;
+    /* letter-spacing: -2px; */
+    /* font-weight: 100; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+
     </style>
   </head>
 
   <body class="not-loaded">
-    <h1 class="title">Dur hu toh kya hua...</h1>
-    <button class="reloadBtn" onclick="bloomFlower()">yeh toh de hi sakta hu</button>
+   <h1 class="title">Dur hu toh kya hua</h1> <br> <br>
+    <button class="reloadBtn" onclick="bloomFlower()"> For you</button>
     <div class="night"></div>
+    <div class="textUp">
+      <h1 class="cssanimation sequence fadeInBottom">Hey, keep smiling and don't stress too much!</h1>
+    </div>
     <div class="flowers">
       <div class="flower flower--1">
         <div class="flower__leafs flower__leafs--1">
